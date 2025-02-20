@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class InjectMocksService {
 
-	private DependencyService dependencyService;
+	private final DependencyService dependencyService;
 
 	public InjectMocksService(DependencyService dependencyService) {
 		this.dependencyService = dependencyService;
